@@ -1,0 +1,34 @@
+2. Check largest among three numbers
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,c;
+    
+    cout<<"enter first number"<<endl;
+    cin>>a;
+    cout<<"enter second number"<<endl;
+    cin>>b;
+    cout<<"enter third number"<<endl;
+    cin>>c;
+    
+    if(a>b)
+    {
+        if(a>c)
+        {
+            cout<<"largest number is "<<a<<endl;
+        }
+            else
+        {
+        cout<<"largest number is "<<c<<endl;
+        }
+        
+        
+        
+    }
+    else
+    
+       { cout<<"largest number is"<<b<<endl;}
+    
+return 0;
+}
