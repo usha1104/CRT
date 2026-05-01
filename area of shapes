@@ -1,0 +1,46 @@
+1. Write a cpp program to print area of shapes
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int choice;
+    int area;
+    cout<<"1.square/n 2.rectangle/n 3.circle/n 4. triangle"<<endl;
+    cout<<"Enter your choice"<<endl;
+    cin>>choice;
+    switch(choice){
+        case 1:{
+            int a;
+            cout<<"enter side length";
+            cin>>a;
+            int result=a*a;
+            cout<<"area of square"<<result<<endl;
+            break;
+        }
+        case 2:{
+            int a,b;
+            cout<<"enter side length and width:";
+            cin>>a>>b;
+            int result=a*b;
+            cout<<"area of rectangle :"<<result<<endl;
+            break;
+        }
+        case 3:{
+            int r;
+            cout<<"enter radius:";
+            cin>>r;
+            int result=3.14*r*r;
+            cout<<"area of circle :"<<result<<endl;
+        }
+        case 4:{
+            int a,b;
+            cout<<"enter side length and base:";
+            cin>>a>>b;
+            int result=1/2*a*b;
+            cout<<"area of triangle :"<<result<<endl;
+            break;
+        }
+        return 0;
+    }
+}    
